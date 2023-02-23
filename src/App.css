@@ -1,0 +1,154 @@
+h1{
+  font-size: 1rem;
+  margin-right: 2rem;
+}
+.title{
+  display: flex;
+}
+.buscador{
+  display: flex;
+  gap: 1rem;
+}
+
+.body--container{
+  background-image: url(../public/assets/img/cool-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgba(18, 17, 17, 0.848);
+  color: whitesmoke;
+}
+
+.navbar input{
+  max-width: 17rem;
+}
+.navbar button{
+  border-radius: 50%;
+}
+.forecastConteiner{
+  display: flex;
+  flex-wrap: wrap;
+}
+.forecastConteiner__details{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+.forecastConteiner__details img{
+  height: 100px;
+  padding-left: 4rem;
+  margin-top: -2.5rem;
+}
+.forecastDay--details{
+  display: block;
+  gap: 10px;
+  overflow:auto;
+}
+.forecastDay--details__hours{
+  display: flex;
+  flex-direction: row;
+}
+.forecast--hour{
+  background-color: rgba(18, 18, 18, 0.72);
+  font-size: 12px;
+  border-radius: 10px;
+  text-align: start;
+  padding: 4px;
+  margin-left: 0.9rem;
+  margin-bottom: 1.5rem;
+  line-height: 2px;
+  width: 6rem;
+}
+.forecast--hour:nth-child(1){
+  margin-left:0;
+}
+.card--forecast{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  gap: 1rem;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background: rgba(28, 27, 27, 0.502);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  color: aliceblue;
+  padding: 2rem;
+}
+
+.card--forecast__principal{
+  flex-direction: row;
+  max-width: 99%;
+  flex-wrap: wrap;
+}
+
+.header--CardPrincipal img{
+  width: 15rem;
+  margin-top: -4rem;
+}
+.header--CardPrincipal,.info--CardPrincipal{
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.info--CardPrincipal{
+  margin-top:-4.2rem;
+}
+
+.footer{
+  color: rgba(138, 139, 140, 0.727);
+  border-top: 1px solid rgba(138, 139, 140, 0.727);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  padding-top: 0.5rem;
+  text-align: center;
+}
+.forecastDay--details::-webkit-scrollbar{
+  background-color: rgba(185, 191, 226, 0.374);
+  border-radius: 5rem;
+}
+.forecastDay--details::-webkit-scrollbar-thumb{
+  background-color: rgba(1, 1, 1, 0.744);
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.forecastDay--details::-webkit-scrollbar-thumb:hover{
+  background-color: rgba(21, 21, 22, 0.744);
+  border-radius: 5rem;
+}
+
+body::-webkit-scrollbar{
+  width: 13px;
+  background-color: rgba(22, 31, 81, 0.801);
+}
+body::-webkit-scrollbar-thumb{
+  width: 10px;
+  background-color: rgba(13, 13, 14, 0.823);
+  border-radius: 5rem;
+}
+
+.alert{
+  display: flex;
+  text-align: center;
+  width: 100%;
+  margin-top: 4rem;
+  background-color: rgb(206, 8, 8);
+  color: white;
+  display: block;
+  height: 100px;
+}
